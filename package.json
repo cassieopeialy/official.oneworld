@@ -1,10 +1,13 @@
 {
+  "homepage":"http://cassieopeialy.github.io/official.oneworld",
   "name": "offic.-oneworld-webpage",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +15,8 @@
     "express-fileupload": "^1.4.0",
     "express.js": "^1.0.0",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
