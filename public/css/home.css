@@ -572,9 +572,7 @@
     }
 
     .tabs li::after{
-
-        left: 48%;
-    
+        display: none;
     }
 
     .tabs.active{
@@ -631,6 +629,12 @@
         padding: 0 5%;
     }
 
+}
+
+@media(max-height:515px){
+    .tabs li{
+        top: -25%;
+    }
 }
 
 @media(max-width:500px){
